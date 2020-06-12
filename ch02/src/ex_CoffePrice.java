@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CoffePrice2 {
+public class ex_CoffePrice {
 	public static void main(String[] args) {
 		int price;
 		int iceprice;

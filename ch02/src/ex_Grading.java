@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Grading2 {
+public class ex_Grading {
 	public static void main(String[] args) {
 		char grade;
 		Scanner scanner = new Scanner(System.in);

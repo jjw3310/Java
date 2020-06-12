@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Box2 {
+public class ex_Box {
 	public static void main(String[] args) {
 		double up; //윗변
 		double down;  //아랫변

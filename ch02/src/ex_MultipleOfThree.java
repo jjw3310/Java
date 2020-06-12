@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MultipleOfThree2 {
+public class ex_MultipleOfThree {
 	public static void main(String[] args) {
 		int number;
 		int value;
