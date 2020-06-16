@@ -7,14 +7,12 @@ public class Ex_ContinueExample {
 		int index = scanner.nextInt();
 		for(int i=0; i<5; i++)
 		{
-			if (index < 0) {
-				continue;
+			if (index > 0)
+				index += index;
 			}
 			else
-				index += index;
+				continue;
 		}
 		System.out.print(index);
 	}
 }
-
-??뭐지
