@@ -2,29 +2,25 @@ package ex11;
 
 import java.util.Scanner;
 
-class CurrencyConverter {
-	private static double rate = 100;
-	public static double toDollar(double won) {
+public class Ex_StaticMember {
+	private static double rate;
+	public double toDollar(double a, double b) {
 		return won / rate;
 	}
-	public static double toKWR(double dollar) {
-		return dollar * rate;
+	public double toKWR(double a, double b) {
+		return won * rate;
 	}
-	public static void setRate(double r) {
+	public double set(double r) {
 		rate = r;
 	}
 }
 
-public class Ex_StaticMember {
-	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		System.out.print("환율(1달러)>> ");
-		double rate = scanner.nextInt();
-		CurrencyConverter.setRate(rate);
-		System.out.println("백만원은 $" + CurrencyConverter.toDollar(1000000) + "입니다.");
-		System.out.println("$100은 " + CurrencyConverter.toKWR(100) + "입니다.");
-		scanner.close();
-	}
+public static void main(String[] args) {
+	Scanner scanner = new Scanner(System.in);
+	System.out.print("환율 >> ");
+	double rate = scanner.nextInt();
+	
+	
+	
 	
 }
-
