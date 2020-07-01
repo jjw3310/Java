@@ -43,4 +43,8 @@ class Panel2 extends JPanel {
 		add(new JLabel("Please Check"));
 		add(new JCheckBox("C# JCheckBox"));
 	}
+	
+	public static void main(String[] args) {
+		new ConCompEx();
+	}
 }

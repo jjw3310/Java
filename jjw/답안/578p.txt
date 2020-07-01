@@ -1,0 +1,44 @@
+1. 3
+2. 4
+3. 
+
+JButton btn = new JButton("Hello");
+btn.addActionListener(new ActionListener()
+{
+public void actionPerformed(ActionEvent e) {
+	System.out.println("Click");
+}
+)';
+
+4.
+
+bin.addKeyListener(new KeyAdapter()
+{
+	public void keyReleased(KeyEvent e) {
+	System.out.println("Key Released");}
+};
+
+5. 
+1. implements ActionListener
+2. extends MouseAdapter
+3. KeyEvent
+
+6. 1
+
+7. 1
+8. 3
+9.Alt, Tab, Delete, Shift
+
+10.
+1. KeyEvent.a
+2. KeyEvent.VK_ALT 
+
+class MyActionListener implements ActionListener {
+	public void actionPerformed(ActionEvent e) {
+		System.out.println("Click");
+	}
+}
+
+public class AnonymousClassListener extends JFrame {
+	public AnonymousClassListener() {
+		setTitle("Action 이벤트 리스너 작성");

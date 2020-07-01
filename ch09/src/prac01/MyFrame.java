@@ -15,6 +15,3 @@ public class MyFrame extends JFrame {
 	}
 
 }
-05099012208953
-
-93560

@@ -19,7 +19,10 @@ public class BorderExam extends JFrame {
 		add(button5, "East");
 		
 		JPanel p1=new JPanel();
+//		p1.setBounds(50, 50, 100, 20);
 		p1.add(button3);
+		p1.setLocation(50, 500);
+		button3.setBounds(50, 50, 100, 20);
 		p1.add(button4);
 		add(p1, "Center");
 		
