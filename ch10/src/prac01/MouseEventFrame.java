@@ -34,3 +34,22 @@ public class MouseEventFrame extends JFrame {
 		new MouseEventFrame();
 	}
 }
+
+/*
+package prac01;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class MouseEventFrame extends JFrame {
+	public MouseEventFrame() {
+		super("마우스 이벤트");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		Container c = getContentPane();
+		
+		
+	}
+}
+
+*/
