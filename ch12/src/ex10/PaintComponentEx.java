@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class PaintComponentEx extends JFrame {
-	public paintComponentEx() {
+	public PaintComponentEx() {
 		setTitle("새로운 버튼 만들기");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		Container c = getContentPane();
@@ -25,6 +25,6 @@ public class PaintComponentEx extends JFrame {
 		}
 	}
 	public static void main(String[] args) {
-		new paintComponentEx();
+		new PaintComponentEx();
 	}
 }
