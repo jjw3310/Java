@@ -1,0 +1,15 @@
+
+2.  2
+3. 1
+4. 1
+5. (1) 
+6. 1
+7. 2 싱크로나이즈
+9. 1
+
+10. implements Runnable
+run()
+Thread.sleep(5000);
+interruptedException
+new MyThread()
+th.start()
