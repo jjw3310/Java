@@ -1,0 +1,114 @@
+data base DOS 명령
+
+sqlplus system/12345
+
+@ C:\oraclexe\app\oracle\product\11.2.0\server\rdbms\admin\scott.sql
+
+alter user scott account unlock identified by tiger;
+
+sqlplus scott/tiger
+
+show user;  // id infomation
+select table_name from tabs;   // table info
+select * from dept; // dept's info show
+
+
+20200714
+relation - table
+필드 - (속성, 열)
+레코드  - (튜플 , 행)
+스키마 - 테이블 정의에 따라 만들어진 데이터 구조
+
+테이블 인스턴스 = 테이블 스키마에 현실 세계의 데이터를 레코드로 저장한 형태
+
+키 - 필드들의 일부로 각 레코드들을 유일하게 식별해낼 수 있는 식별자(identifier)
+여러 필드를 키로 지정하면 복합키 라고 함
+
+두 테이블 스키마 R1 r2에 대해
+R1의 어떤 필드집합 FK가 다음 두 조건을 만족하면, FK는 R2의 기본키인 PK를 참조하는 R1의 외래키임
+FK의 필드들은 테이블 스키마 R2의 기본 키 PK와 동일한 도메인을 가짐
+
+PK(프라이머리 키)와 다른 테이블의 공통분모 FK를 기억하기
+ERD 객체 관계도 그리기
+
+데이터 모델링 세가지 개념
+-엔티티 (Entity)
+-관계 (Relationship)
+-속성 (attribute)
+
+데이터 베이스 용어와 모델링 용어
+테이블 - 엔티티
+컬럼, 열 - 속성
+튜플, 행 - 인스턴스
+기본키 - 주식별자
+외래키 - 외래 식별자
+
+관계의 카디널리티
+
+단일 : | e.g) 사원 ---|- 급여액
+다중 : < e.g) 사원 ---<-부서경력 
+1:N 관계 e.g) 학생 -|---<-수강과목
+1:1관계         학생 -|---|- 신체검사
+M:N 관계     제품(제품명, 제품분류, 판매코너) ->---<-제조업체 (업체명, 공장위치)
+
+관계의 참여도
+
+관계가 있는 두 엔티티의 인스턴스들이 항상 관계에 참여하는지, 아니면
+
+경우에 따라서 관계에 참여하는지 여부
+
+필수  : |
+선택 : ㅇ
+사원 ------|-|- 급여액
+사원 ----ㅇ-|-사내배우자
+부서경력
+취미
+
+
+데이터
+NOT NULL (데이터 입력해야 함)
+데이터 Type
+NUMBER(4)
+VARCHAR2(10)
+VARCHAR2(9)
+NUMBER(4)
+DATE
+NUMBER(7,2)
+NUMBER(7,2)
+NUMBER(2)
+
+
+show user;
+select * from emp;
+select * from dept;
+list
+change /dept/emp
+run
+save test1 //명령어 SQL파일로 저장
+start test1  -
+sta test1  -   equals
+@ test1   - 
+get test1 // 버퍼로 명령어를 불러옴
+
+spool result // 종료까지 실행하는 데이터 파일로 저장하는 명령어
+
+select * from emp;
+
+---
+---
+--
+12 rows selected.
+
+SQL> select * from salgrade;
+
+---
+-
+-
+
+SQL> spool off; // 파일로 저장 완료
+
+set line 400;
+set pagesize 100;
+
+conn scott/tiger; // 계정 변환
+conn system/12345;
