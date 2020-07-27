@@ -420,3 +420,141 @@ maxvalue 10000;
 select seq1.nextval from dual;
 
 select seq1.currval from dual;
+
+select * from emp where deptno=30;
+
+create or replace view v_emp30
+as
+select empno,ename,sal,deptno
+from emp
+where deptno=30;
+
+select * from v_emp30;
+
+select * from emp;
+
+create or replace view v_emp30
+as
+select empno,ename,job,sal
+from emp
+where deptno=10;
+
+select * from v_emp30;
+
+create sequence seq2
+increment by 1
+start with 1
+maxvalue 100;
+
+select seq2.nextval from dual;
+
+select seq2.currval from dual;
+
+alter sequence seq2
+increment by 2;
+
+drop sequence seq2;
+
+create sequence emp_seq
+start with 1
+increment by 1
+maxvalue 100000;
+
+select emp_seq.nextval from dual;
+
+select emp_seq.currval from dual;
+
+create table emp12(
+empno number(4) primary key,
+ename varchar(10),
+hiredate date
+);
+
+select constraint_name, constraint_type, table_name
+from user_constraints
+where table_name in('EMP12');
+
+insert into emp12
+values(emp_seq.nextval, '홍길동', SYSDATE);
+
+insert into emp12
+values(emp_seq.nextval, '강감찬', SYSDATE);
+
+select * from emp12;
+
+select sequence_name, min_value, max_value, increment_by
+from user_sequences;
+
+create or replace view view_hire
+as
+select empno, ename,hiredate
+from emp
+order by hiredate;
+
+select rownum, empno, ename, hiredate
+from view_hire
+where rownum <= 5;
+
+select rownum, empno, ename, hiredate
+from (select empno,ename,hiredate
+            from emp
+            order by hiredate)
+where rownum <= 5;
+
+
+create table product
+(p_code char(3) not null,
+p_name varchar2(30),
+p_cost number,
+p_group varchar2(30),
+constraint p_code_pk primary key(p_code)
+);
+
+select * from product;
+
+desc product;
+
+insert into product values('101', '19인치 모니터', 150000, '모니터');
+insert into product values('102', '22인치 모니터', 200000, '모니터');
+insert into product values('103', '25인치 모니터', 260000, '모니터');
+insert into product values('201', '유선마우스', 7000, '마우스');
+insert into product values('202','무선마우스', 18000, '마우스');
+insert into product values('301', '유선키보드', 8000, '키보드');
+insert into product values('302', '무선키보드', 22000, '키보드');
+insert into product values('401', '2채널 스피커', 10000, '스피커');
+insert into product values('402', '5.1채널 스피커', 120000, '스피커');
+
+select * from product;
+
+alter table product
+add (bigo varchar2(10));
+
+desc product;
+
+alter table product
+modify (bigo varchar2(20));
+
+alter table product
+drop (bigo);
+
+rename product to product1;
+
+truncate table product1;
+
+select * from product1;
+
+drop table product1;
+
+create or replace view v_emp
+as
+select e.ename, d.dname
+from emp e, dept d
+where e.deptno = d.deptno;
+
+select * from v_emp;
+
+select e.deptno, d.dname,e.sal
+from (select deptno, MAX(sal) sal
+         from emp
+        group by deptno) e, dept d
+where e.deptno = d.deptno;
