@@ -1,0 +1,23 @@
+1. <!DOCTYPE html> --인클루드
+2. <html>
+	<head>
+		<meta charset="UTF-8">
+		<title> 타이틀 </title>
+	</head>
+	<body>
+		내 웹
+	</body>
+</html>
+
+3. <p align="center"> 문서의 내용 <p>
+   요소 속성 속성값
+
+4.<!--주석-->
+
+5. <h1 title="h1태그로 작성하였습니다."> 1장 홈페이지 </h1>
+
+6. &lt/hr&gt; = </hr> 꺽새 주소
+
+7. &nbsp; 띄어쓰기
+
+8. <pre> 그대로 보이기 </pre>
