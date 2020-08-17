@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>지역변수와 전역변수</title>
+</head>
+
+<body>
+	<h3>지역변수와 전역변수</h3>
+	<hr>
+	<script>
+		var x=100;  // 전역변수
+		
+		function f(){  // 함수 f() 선언
+			var x=1;  // 지역변수
+			document.write("지역변수 x=" + x);
+			document.write("<br>");
+			document.write("전역변수 x=" + this.x);}
+			
+		f();  // 함수 f() 호출
+	</script>
+</body>
+</html>
+
+
+<!-- 지역변수, 전역변수 -->
+<!-- 지역변수를 호출하려면 바로 지역변수 작성 -->
+<!-- 전역변수를 호출하려면 this.전역변수 -->
+<!-- 함수를 선언해서 스크립트를 작성한 경우, 꼭 함수 호출을 할 것 -->

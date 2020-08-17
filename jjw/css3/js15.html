@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>switch</title>
+</head>
+
+<body>
+	<h3>switch 문으로 커피 주문</h3>
+	<hr>
+	<script>
+		var price=0;
+		var coffee=prompt("무슨 커피 드릴까요?","");
+		
+		switch(coffee){
+			case "espresso" :
+			case "에스프레소" : price=2000;	break;
+			case "카푸치노" : price=3000;		break;
+			case "카페라떼" : price=3500;		break;
+			default : document.write(coffee + "는 없습니다.");
+		}
+		
+		if(price !=0)
+			document.write(coffee + "는 " + price + "원 입니다.");
+	</script>
+</body>
+</html>
+
+
+<!-- 선택문 : 저장된 데이터의 값이 일치하는 경우에 해당 실행문 수행 -->
+<!-- switch(값) {
+        case n1: 실행문1; break;
+        case n2: 실행문2; break;
+        case n3: 실행문3; break;
+				…
+        [default] 실행문n;  // []는 사용하지 않아도 됨
+     } -->
+	 
+<!-- if(조건식){ 실행문; } -->

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Switch(선택문)</title>
+	<script>
+		var code=prompt("부서코드를 입력하시오(dev1, dev2, eng1, eng2)"," ");
+		var dept;
+		switch(code){
+			case "dev1":  // 입력 시, 없기 때문에 아래로 내려감
+			case "dev2": dept="개발부"; break;
+			case "eng1":  // 입력 시, 없기 때문에 아래로 내려감
+			case "eng2": dept="기술부"; break;
+		}
+		document.write("당신은 " + dept + "에 근무하며, 부서 코드는 " + code + "입니다");
+	</script>
+</head>
+
+<body>
+</body>
+</html>
+
+
+<!-- 선택문 : 저장된 데이터의 값이 일치하는 경우에 해당 실행문 수행 -->
+<!-- switch(값) {
+        case n1: 실행문1; break;
+        case n2: 실행문2; break;
+        case n3: 실행문3; break;
+				…
+        [default] 실행문n;  // []는 사용하지 않아도 됨
+     } -->

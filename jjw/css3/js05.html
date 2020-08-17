@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>script 태그에 자바스크립트 작성</title>
+	<script>
+		function over(obj){
+			obj.src="image/banana.png";}
+		function out(obj){
+			obj.src="image/apple.png";}
+	</script>
+</head>
+
+<body>
+	<h3>마우스를 올려 보세요</h3>
+	<hr>
+	<img src="image/apple.png" alt="이미지"
+			onmouseover="this.src='image/banana.png'"
+			onmouseout="this.src='image/apple.png'">
+</body>
+</html>
+
+
+<!-- over, out 함수(function) 사용 -->
+<!-- onmouseover : 마우스 커서를 올려놨을 때 발생하는 이벤트 -->
+<!-- onmouseout : 마우스 커서를 빼냈을 때의 이벤트 -->
