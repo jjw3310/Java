@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>프로토타입으로 객체 만들기</title>
+<script>
+	function Account(owner, code, balance) {
+		this.owner = owner;
+		this.code = code;
+		this.balance = balance;
+		
+		this.inquiry = function () { return this.balance; }
+		this.deposit = function (money) { this.balance += money; }
+		this.withdraw = function (money) {
+			this.balance -= money;
+			return money;
+		}
+	}
+</script>
+</head>
+<body>
+<h3>Account 프로토타입 만들기</h3>
+<hr>
+<script>
+	var account = new Account("황기태", "111", 35000);
+	
+	document.write("account : ");
+	document.write(
+</body>
+</html>
