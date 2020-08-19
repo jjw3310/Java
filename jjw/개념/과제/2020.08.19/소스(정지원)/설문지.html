@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+    <title>여행지 선호도 설문조사</title>
+ </head>
+<body>
+<header>
+<div >
+    <h1>여행지 선호도 설문조사</h1>
+</div>
+	<article style="width: 270px; border:1px solid gold;">
+      <p> 여행지에 대한 의견을 들려주세요.</p>
+	</article>
+</header>
+
+<style>
+	div {
+		background: Linear-gradient(to left,white,green);
+	}
+	
+	form {
+		background-color:skyblue;
+	}
+</style>
+<section>
+	<form  style="height: auto; width: 100%; border:1px solid blue;">
+		<p>나이
+			<label><input type="radio" name="grade" value="1" checked>10대</label>
+			<label><input type="radio" name="grade" value="2">20대</label>
+			<label><input type="radio" name="grade" value="3">30대</label>
+			<label><input type="radio" name="grade" value="3">40대</label>
+			<label><input type="radio" name="grade" value="3">50대</label>
+	
+		</p>
+		<p>성별
+			<label><input type="radio" name="gender" value="male">남</label>
+			<label><input type="radio" name="gender" value="female" checked>여</label>
+		</p>
+		<p>직업
+			<select>
+				<option value="1">회사원
+				<option value="2">사업가
+				<option value="3">프리랜서/전문직
+				<option value="4">비정규직
+				<option value="5">학생
+				<option value="6">기타
+			</select>
+		</p>
+		<p>선호 여행지
+			<label><input type="radio" name="travel" value="1" checked>자연</label>
+			<label><input type="radio" name="travel" value="2">레저활동</label>
+			<label><input type="radio" name="travel" value="3">맛집</label>
+			<label><input type="radio" name="travel" value="4">이국적인 분위기</label>
+			<label><input type="radio" name="travel" value="5">사진찍기 좋은 곳</label>
+		</p>
+		<p>이번에 갈 여행지에 이것이 꼭 있어야 한다면?<br>
+			<textarea cols="50" rows="10" placeholder="e.g)그래도 놀러가는데 깔끔한 숙박시설은 있어야지!"></textarea>
+		</p>	
+		
+		<input type="button" name="finish" value="제출" onclick="alert('제출되었습니다. 감사합니다!')"
+		style="margin-left: 10px; margin-bottom: 10px">
+	</form>
+</section>
+<footer>
+	<p>Copyright mirae</p>
+</footer>
+ 
+</body>
+</html>

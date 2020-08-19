@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <title>여행지 소개</title>
+  <meta name="description" content="국내 여행지에 대한 간단한 소개">
+	<meta name="keywords" content="여행, 국내, 데이트">
+	<link href="product.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<header>
+
+<style>
+	body {
+		margin: 0;
+	}
+	.header{
+		padding: 10px;
+		text-align: center;
+		background-color:skyblue;
+		border-bottom: 1px solid #bdbdbd;
+		color:black;
+	}
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		width: 100px;
+		overflow: auto;
+	}
+	li a {
+		display : block;
+		color: #000;
+		padding: 8px 16px;
+		text-decoration: none;
+	}
+	li a:hover{
+		background-color: #555;
+		color: white:
+	}
+	div {
+		text-align: center;
+		padding: 25px;
+		color: gray;
+		background-color: orange;
+	}
+	nav {
+		background: Linear-gradient(to bottom,white,blue);
+	}
+	footer {
+		background-color: brown;		
+	}
+		
+	</style>	
+		<div class="header">
+			<h1>국내여행 정보</h1>
+		</div>
+	<article>
+      <div>이번 여행 어디로 가실래요?</div>
+	</article>
+</header>
+
+<nav>
+  <h3>요기를 보고 가요!</h3>
+	<ul>
+		<li><a href="#seoul">서울</a></li>
+		<li><a href="#gyeonggi">경기도</a></li>
+		<li><a href="#gangwon">강원도</a></li>
+		<li><a href="#chungcheong">충청도</a></li>
+		<li><a href="#gyeongsang">경상도</a></li>
+		<li><a href="#Jeolla">전라도</a></li>
+		<li><a href="#photo">여행사진</a></li>		
+	</ul>
+</nav>
+  
+<section>         
+<style>
+      .container {
+        height: 700px;
+        overflow: auto;
+		background-color: white;
+      }
+    </style>
+    <div class="container">
+  <article>
+    <h2 id="seoul"><a href="https://korean.visitseoul.net/index" target="_blank">서울</a></h2>
+		<p>
+		<tr><td><img src="media/seoul.png" width="400" alt="서울"></td><br>
+			지금 서울은 여기가 뜬다!
+			서울의 여름을 함께해요
+		</p>
+  </article>
+	
+	<article>
+		<h2 id="gyeonggi"><a href="https://ggtour.or.kr/enjoy/hundred.php?tsort=2" target="_blank">경기도</a></h2>     
+		<tr><td><img src="media/gyeonggi.png" width="400" alt="경기"></td><br>
+		<p>
+			여행지기들이 추천하는 경기도의 그 곳!
+    </p>
+  </article>
+      
+  <article>
+    <h2 id="gangwon"><a href="https://www.gangwon.to/tour/go_to_kangwondo/gangwon_tour20" target="_blank">강원도</a></h2>
+		<tr><td><img src="media/gangwon.png" width="400" alt="강원"></td><br>
+		<p>
+			진정한 강원도의 숨소리를 들을 수 있습니다.
+		</p>
+	</article> 
+  
+  <article>
+    <h2 id="chungcheong"><a href="http://digitalchosun.dizzo.com/site/data/html_dir/2019/02/08/2019020880161.html?rel" target="_blank">충청도</a></h2>
+		<tr><td><img src="media/chungcheong.png" width="400" alt="충청"></td><br>
+		<p>
+			천혜의 자연 품은 충청도 여행지 10곳
+		</p>
+	</article> 
+	
+	<article>
+    <h2 id="gyeongsang"><a href="http://www.olivenote.co.kr/news/articleView.html?idxno=2222" target="_blank">경상도</a></h2>
+		<p>
+		<tr><td><img src="media/gyeongsang.png" width="400" alt="경상"></td><br>
+			일단 떠나봐? 관광공사 추천여행지
+		</p>
+  </article>
+  
+  <article>
+    <h2 id="Jeolla"><a href="https://brunch.co.kr/@expediakr/806" target="_blank">전라도</a></h2>
+		<p>
+		<tr><td><img src="media/jeolla.png" width="400" alt="전라"></td><br>
+			나만 안가봤어? 요즘 핫한 전라도 여행지<br><br><br><br>
+		</p>
+  </article>
+  
+  
+  <article>
+    <h2 id="photo">여행사진</h2>
+		<p>
+      <table> 
+				<tbody>
+					<tr><td><img src="media/1.png" width="100" alt="갤럭시7"></td>
+						<td><img src="media/2.png" width="100" alt="아이폰6"></td>
+						<td><img src="media/3.png" width="100" alt="타이젠"></td>	
+						<td><img src="media/4.png" width="100" alt="윈도우폰"></td>
+						<td><img src="media/5.png" width="100" alt="노키아폰"></td>
+					</tr>
+				</tbody>
+				<h1>친구 프사에서 자주 보던 바로 그 풍경 보러가자!</h1>				
+			</table> 
+			
+				<br><br><br><br>
+		</p>
+  </article>      
+</section>
+
+<footer>
+	<p>
+	<script>
+	var days=new Array("일", "월", "화", "수", "목", "금", "토");
+	var date=new Date();
+	document.write("오늘은 "
+			+date.getFullYear()+"년"
+			+(date.getMonth()+1)+"월"
+			+date.getDate()+"일 "
+			+days[date.getDay()]+"요일 입니다.<br>");
+			
+	document.write("현재시간은 " +date.getHours()+":"
+							  +date.getMinutes()+":"
+							  +date.getSeconds()+"입니다.");
+	</script>
+	</p>
+	<p>(주)요긴가<br><br></p>
+	<h1></h1>
+	<p><br></p>
+</footer>
+  
+</html>
