@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>페이지 제작</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- header -->
+	<header>
+	
+		<div class="container">	
+			<div class="logo">
+                 <img src="image/3.png">
+            </div>		
+		</div>
+	</header>
+	<!-- //header -->
+	
+<!-- nav --------------------------------------------- -->
+	<nav>
+	
+		<div style="text-align:center; padding-top:7px; font-size:10pt;" class="container">
+			<ul class="leftMenu">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="galary.html">Photo</a></li>
+				<li class="dropBox">
+					<a href="board.html">게시판</a> 
+					<span class="dropmenu"> 
+						<span><a href="#">자유 게시판</a></span> 
+						<span><a href="#">문의 게시판</a></span> 
+						<span><a href="#">건의 게시판</a></span>
+					</span>
+				</li>
+				<li class="dropBox">
+					<a href="">멀티미디어</a> 
+					<span class="dropmenu"> 
+						<span><a href="#">음악듣기</a></span> 
+						<span><a href="#">동영상보기</a></span> 
+					</span>
+				</li>
+				<li><a href="#">상품구매</a></li>
+				<li><a href="#">찾아오시는길</a></li>
+			</ul>
+			<ul class="rightMenu">
+				<li><a href="join.html">회원가입</a></li>
+				<li><a href="login.html">로그인</a></li>
+			</ul>
+
+		</div>
+	</nav>
+	<!-- //nav -->
+	
+	<!-- section3 --------------------------------------------- -->
+    <section id="section3">
+        <div class="container">
+            <h1>갤러리</h1>
+            <div class="box">
+                <div class="image_box">
+                    <img src="image/16.png" alt="" onclick="showDivs(1)">
+                </div>
+                <div class="des">
+                    Byron Bay, Australia
+                </div>
+            </div>
+            <div class="box">
+                <div class="image_box">
+                    <img src="image/17.png" alt="" onclick="showDivs(2)">
+                </div>
+                <div class="des">
+                     Fulong Beach, Taiwan
+                </div>
+            </div>
+            <div class="box">
+                <div class="image_box">
+                    <img src="image/18.png" alt="" onclick="showDivs(3)">
+                </div>
+                <div class="des">
+                    Backdoor, Oahu, Hawaii
+                </div>
+            </div>
+            <div class="box">
+                <div class="image_box">
+                    <img src="image/19.png" alt="" onclick="showDivs(4)">
+                </div>
+                <div class="des">
+                    Pipeline, Oahu, Hawaii
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="clear"></div>
+    <!-- //section3 -->
+    
+    <div id="back"></div>
+    <div id="popup">
+        <div class="title">SandArt Popup <span class="close" onclick="closePopup()">&times;</span></div>
+         <div align="center" class="large">
+			<div class="small">
+				<img class="mySlides" src="image/16.png">
+				<img class="mySlides" src="image/17.png">
+				<img class="mySlides" src="image/18.png">
+				<img class="mySlides" src="image/19.png">
+				
+				<a class="leftbtn" onclick="plusDivs(-1)">◀</a>
+				<a class="rightbtn" onclick="plusDivs(1)">▶</a>
+			</div>
+		</div>
+    </div>
+    
+    <!-- footer -->
+	<footer>
+		<div class="top">
+		
+			<div class="container">
+				<span><strong>고객지원센터</strong>
+				<h3>010-333-9000</h3>
+				<h5>오전 11시부터 오후 4시까지</h5></span>
+			</div>
+		</div>
+	</footer>
+	<!-- //footer -->
+    
+	<script>
+		var slideIndex=0;
+		function plusDivs(n) {
+		  showDivs(slideIndex += n);
+		}
+		function showDivs(n) {
+		  var i;
+		  slideIndex = n;
+		  var x = document.getElementsByClassName("mySlides");
+		  if (n > x.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = x.length} ;
+		  for (i = 0; i < x.length; i++) {
+		     x[i].style.display = "none";  
+		  }
+		  x[slideIndex-1].style.display = "block";  
+		  document.getElementById("back").style.display = "block";
+		  document.getElementById("popup").style.display = "block"; 
+		} 
+		
+		function closePopup(){
+			document.getElementById("back").style.display = "none";
+		    document.getElementById("popup").style.display = "none";
+		}
+	</script>
+</body>
+</html>
