@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script>
+$(function(){
+	$("#btnLogin").click(function() {
+		var userid=$("#userid").val();
+		var passwd=$("#passwd").val();
+		if(userid == "") {
+			alert("아이디를 입력하세요.");
+			$("#userid").focus();
+			return;
+		}
+		if(passwd=="") {
+			alert("비밀번호를 입력하세요.");
+			$("#passwd").focus();
+			return;
+		}
+		document.form1.submit();
+	});
+});
+</script>
+</head>
+<body>
+<h2>로그인</h2>
+<form method="post" name="form1" action="login_result.jsp">
+아이디<input type="text" name="userid" id="userid"><br>
+비 번<input type="password" name="passwd" id="passwd"><br>
+<input type="button" value="로그인" id="btnLogin">
+</form>
+</body>
+</html>
