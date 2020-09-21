@@ -12,9 +12,9 @@
 <img src="red.jpg">
 <%
 	String msg = "오류 원인 : " + exception;
-	System.out.println("----------------");
+	System.out.println("----------------------");
 	System.out.println(msg);
-	System.out.println("----------------");
+	System.out.println("----------------------");
 	exception.printStackTrace();
 %>
 </body>
