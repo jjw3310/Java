@@ -1,12 +1,11 @@
 package model.vo;
-
 public class NewsVO {
 	private int id;
 	private String writer;
 	private String title;
 	private String content;
 	private String writeDate;
-	private int viewCount;
+	private int viewCount;		
 	public int getId() {
 		return id;
 	}
@@ -42,5 +41,5 @@ public class NewsVO {
 	}
 	public void setViewCount(int viewCount) {
 		this.viewCount = viewCount;
-	}
+	}	
 }
