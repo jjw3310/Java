@@ -81,3 +81,8 @@
 10월 06, 2020 10:39:15.30 NEW SESSION
 10월 06, 2020 10:39:15.30 [7788:376:1006/103915.308:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
 10월 06, 2020 10:39:23.97 [7788:528:1006/103923.971:ERROR:device_event_log_impl.cc(208)] [10:39:23.970] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+
+10월 08, 2020 15:46:02.84 NEW SESSION
+10월 08, 2020 15:46:02.84 [5744:6012:1008/154602.846:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+10월 08, 2020 15:50:03.30 [7688:2192:1008/155003.306:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+10월 08, 2020 15:50:12.79 [7688:7592:1008/155012.791:ERROR:device_event_log_impl.cc(208)] [15:50:12.782] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.

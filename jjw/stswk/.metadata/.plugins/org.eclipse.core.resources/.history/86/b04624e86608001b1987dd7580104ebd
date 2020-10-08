@@ -1,0 +1,130 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="model.vo.NewsVO, java.util.List" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>News 게시판</title>
+<style>
+header, section, nav {
+	width : 80%;
+	margin : 10px auto;
+	text-align : center;
+}
+table {
+	margin : 10px auto;
+}
+th {
+	border: 1px solid #ddd;
+	text-align : center;
+	background:#ddd;
+	color:purple;
+	text-shadow:1px 1px 1px #fff;
+}
+
+td {
+	border-bottom : 1px dotted black;
+	text-align :center;
+}
+td:nth-child(5n+1), th:nth-child(5n+1) {
+	width : 60px;
+}
+td:nth-child(5n+2), th:nth-child(5n+2) {
+	width : 300px;
+}
+td:nth-child(5n+3), th:nth-child(5n+3) {
+	width : 100px;
+}
+td:nth-child(5n+4), th:nth-child(5n+4) {
+	width : 100px;
+}
+td:nth-child(5n+5), th:nth-child(5n+5) {
+	width : 60px;
+}
+.insert {
+	display : none;
+	/* test-align : center; */
+}
+input, textarea {
+	margin : 3px;
+}
+a {
+	text-decoration : none;
+}
+a:link, a:active, a:visited {
+	color : black;
+}
+a:hover {
+	font-weight : bold;
+}
+h1 {
+	color : purple;
+}
+.showLine{margin-left:70%;}
+</style>
+</head>
+<body>
+<header>
+	<h1>${msg}</h1>
+</header>
+<%
+if(request.getAttribute("vo") != null) {
+	NewsVO vo = (NewsVO)request.getAttribute("vo");
+}
+%>
+<section>
+<div>
+	<form id="updateform" method="post" action="/mvc/news.do">
+		<input type="hidden" name="action" value="update">
+		<input type="hidden" name="pgNum" value="${ pgNum }">
+		<input type="hidden" name="id" value="<%= vo.getId() %>">
+		<input type="text" size="40" name="writer" value="<%= vo.getWriter() %>"><br>
+		<input type="text" size="40" name="title" value="<%=vo.getTitle() %>"><br>
+		<textarea cols="42" rows="7" name="content"><%= vo.getContent() %></textarea><br>
+			</form>
+			<button onclick="location.replace(document.referrer)">확인</button>
+			<button onclick="document.getElementById('updateform').submit();">수정</button>
+			<button onclick="location.href='/mvc/news.do?action=delete&id=<%= vo.getId() %>
+			&pgNum=&{pgNum}'">삭제</button>
+</div>
+</section>
+<%
+}else{
+	List<NewsVO> list = (List<NewsVO>) request.getAttribute("list");
+	int listsize = 0;
+	if(list!=null) listsize = list.size();
+}
+%>
+
+<aside class="showLine">
+글 개수 : <%=listsize %> (${totalCount})
+</aside>
+<section>
+<%
+	if(list != null) {
+%>
+
+	<table>
+	<tr>
+		<th>번호<a href="/mvc/news.do?action=sort&key=id">^</a></th>
+		<th>제목<a href="/mvc/news.do?action=sort&key=title">^</a></th>
+		<th>작성자<a href="/mvc/news.do?ction=sort&key=writer">^</a></th>
+		<th>작성일<a href="/mvc/news.do?action=sort&key=writedate">^</a></th>
+		<th>조회수</th>
+	</tr>
+<%
+	for(NewsVO vo : list) {
+%>
+	<tr>
+	<td><%= vo.getId() %></td>
+<td><a href="/mvc/news.do?action=listone&id=<%= vo.getId() %>&pgNum=${pgNum}"><%= vo.getTitle() %></a></td>
+<td><a href="/mvc/news.do?action=listwriter&writer=<%= vo.getWriter() %>"><%= vo.getWriter() %></a></td>
+	<td><%= vo.getWriteDate()%></td>
+	<td><%= vo.getViewCount()%></td>
+	</tr>
+	
+	</table>
+</section>
+</body>
+</html>
+
