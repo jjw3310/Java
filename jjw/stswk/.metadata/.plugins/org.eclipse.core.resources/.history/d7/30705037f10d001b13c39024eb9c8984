@@ -1,0 +1,15 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import = "ch11.logon.LogonDBBean" %>
+
+<% request.setCharacterEncoding("utf-8"); %>
+
+<%
+	String id = request.getParameter("id");
+
+//DB처리빈인 LogonDBBean 클래스의 객체를 얻어낸다.
+LogonDBBean manager = LogonDBBean.getInstance();
+
+int check=manager.confirmId(id);
+
+out.println(check);//처리 결과를 register.js로 리턴
+%>

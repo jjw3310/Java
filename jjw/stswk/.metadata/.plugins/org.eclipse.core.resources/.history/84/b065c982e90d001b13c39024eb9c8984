@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import = "ch11.logon.LogonDataBean" %>
+<%@ page import = "ch11.logon.LogonDBBean" %>
+
+<link rel = "stylesheet" href="../css/style.css"/>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script src="modify.js"></script>
+
+<% request.setCharacterEncoding("utf-8");%>
+
+<%
+	String id = (String)session.getAttribute("id");
+	String passwd = request.getParameter("passwd");
+	
+	LogonDBBean manager = LogonDBBean.getInstance();
+	//아이디와 비밀번호에 해당하는 사용자의 정보를 얻어냄
+	LogonDataBean m = manager.getMember(id, passwd);
+	
+	try {//얻어낸 사용자 정보를 화면에 표시
+%>

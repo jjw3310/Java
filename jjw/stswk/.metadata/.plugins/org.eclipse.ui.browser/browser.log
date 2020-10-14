@@ -86,3 +86,10 @@
 10월 08, 2020 15:46:02.84 [5744:6012:1008/154602.846:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
 10월 08, 2020 15:50:03.30 [7688:2192:1008/155003.306:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
 10월 08, 2020 15:50:12.79 [7688:7592:1008/155012.791:ERROR:device_event_log_impl.cc(208)] [15:50:12.782] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+
+10월 12, 2020 14:47:36.77 NEW SESSION
+10월 12, 2020 14:47:36.77 [1892:7048:1012/144736.773:ERROR:device_event_log_impl.cc(208)] [14:47:36.774] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+10월 12, 2020 14:51:28.15 [928:6176:1012/145128.150:ERROR:device_event_log_impl.cc(208)] [14:51:28.150] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+10월 12, 2020 15:01:24.78 [1012/150124.784:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+10월 12, 2020 15:27:09.10 [2376:7560:1012/152709.100:ERROR:device_event_log_impl.cc(208)] [15:27:09.100] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+10월 12, 2020 15:36:57.70 [1012/153657.703:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
