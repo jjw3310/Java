@@ -1,4 +1,5 @@
 #Tomcat publish data
-#Mon Oct 12 16:40:52 KST 2020
-org.eclipse.jst.jee.server\:mvc=C\:\\apache-tomcat-9.0.34\\wtpwebapps\\mvc
+#Fri Oct 16 16:34:23 KST 2020
+org.eclipse.jst.jee.server\:sungjukbean=C\:\\apache-tomcat-9.0.34\\wtpwebapps\\sungjukbean
 org.eclipse.jst.jee.server\:edu=C\:\\apache-tomcat-9.0.34\\wtpwebapps\\edu
+org.eclipse.jst.jee.server\:mvc=C\:\\apache-tomcat-9.0.34\\wtpwebapps\\mvc

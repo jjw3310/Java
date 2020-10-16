@@ -3,6 +3,7 @@ package model.vo;
 public class MemberVO {
 	private String name;
 	private String phoneNum;
+	private String hp;
 	private String id;
 	private String passwd;
 	public String getName() {

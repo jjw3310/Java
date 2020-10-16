@@ -27,4 +27,5 @@
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
 <fullyQualifiedTypeName name="model.vo.NewsVO"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.sql.DriverManager"/>
 </qualifiedTypeNameHistroy>

@@ -45,6 +45,10 @@
     <th>전화번호</th>
     <td><input type="text" name="ab_tel" value="<%=ab.getAb_tel() %>"></td>
   </tr>
+  <tr>
+    <th>주소</th>
+    <td><input type="text" name="ab_addrs" value="<%=ab.getAb_addrs() %>"></td>
+  </tr>
       <tr>
     <th>생 일</th>
     <td><input type="date" name="ab_birth" value="<%=ab.getAb_birth() %>"></td>

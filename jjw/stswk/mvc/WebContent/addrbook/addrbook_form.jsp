@@ -28,6 +28,10 @@
     <td><input type="text" name="ab_tel" maxlength="20"></td>
   </tr>
   <tr>
+    <th>주소</th>
+    <td><input type="text" name="ab_addrs" maxlength="20"></td>
+  </tr>
+  <tr>
     <th>생 일</th>
     <td><input type="date" name="ab_birth"></td>
   </tr>  

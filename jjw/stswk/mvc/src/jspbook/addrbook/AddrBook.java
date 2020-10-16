@@ -6,6 +6,7 @@ public class AddrBook {
 	private String ab_name;
 	private String ab_email; 
 	private String ab_tel;
+	private String ab_addrs;
 	private String ab_birth;
 	private String ab_comdept;
 	private String ab_memo;
@@ -32,6 +33,12 @@ public class AddrBook {
 	}
 	public void setAb_tel(String ab_tel) {
 		this.ab_tel = ab_tel;
+	}
+	public String getAb_addrs() {
+		return ab_addrs;
+	}
+	public void setAb_addrs(String ab_addrs) {
+		this.ab_addrs = ab_addrs;
 	}
 	public String getAb_birth() {
 		return ab_birth;
