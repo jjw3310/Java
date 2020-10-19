@@ -1,0 +1,17 @@
+package polymorphism;
+
+public class TVUser {
+	public static void main(String[] args) {
+//		SamsungTV tv = new SamsungTV();
+		LgTV tv = new LgTV();
+//		tv.powerOn();
+		tv.turnOn();
+//		tv.volumeUp();
+		tv.turnOff();
+//		tv.volumeDown();
+		tv.soundUp();
+//		tv.powerOff();
+		tv.soundDown();
+	}
+
+}
