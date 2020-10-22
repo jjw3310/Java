@@ -111,6 +111,8 @@
 		<item value="org.springsource.sts.package:3.9.2.201712210947-RELEASE-e47"/>
 		<item value="org.springsource.sts:3.9.2.201712210947-RELEASE"/>
 	</list>
+	<section name="ExternalProjectImportWizard">
+	</section>
 	<section name="NewWizardAction">
 	</section>
 	<section name="ChooseWorkspaceDialogSettings">
