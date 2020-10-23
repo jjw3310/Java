@@ -1,0 +1,11 @@
+package com.springbook.biz.common;
+
+@Aspect
+public class PointcutCommon {
+	@Pointcut("execution(* com.springbook.biz..*Impl.*(..))")
+	public void allPointcut() {}
+	
+	@Pointcut("execution(* com.springbook.biz..*Impl.get*(..))")
+	public void getPointcut() {}
+
+}

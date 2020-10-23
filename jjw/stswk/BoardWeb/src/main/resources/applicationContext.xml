@@ -12,6 +12,55 @@
 						http://www.springframework.org/schema/aop/spring-aop-4.2.xsd">
 
 
+
+
+
+
+<context:component-scan base-package="com.springbook.biz"/>
+ 
+<aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+
+<context:property-placeholder location="classpath:config/database.properties" />
+
+<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+	<property name="driverClassName" value="${jdbc.driver}"/>
+	<property name="url" value="${jdbc.url}" />
+	<property name="username" value="${jdbc.username}"/>
+	<property name="password" value="${jdbc.password}"/>
+</bean>
+
+
+
+<!--  DataSource 설정 -->
+<!--
+<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+	<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+	<property name="url" value="jdbc:oracle:thin:@Localhost:1521:xe" />
+	<property name="username" value="mvcdb" />
+	<property name="password" value="12345" />
+</bean>
+
+ -->
+                                                <!-- 
+<aop:aspect ref="afterReturning" pointcut-ref="getPointcut" method="afterLog"
+								returning="returnObj"/>
+								</aop:aspect>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- 
 	<bean id="collectionBean" class="com.springbook.ioc.injection.CollectionBean">
 		<property name="addressList">
@@ -26,7 +75,6 @@
  -->
  
 
-<context:component-scan base-package="com.springbook.biz"/>
 <!-- 
 <bean id="log" class="com.springbook.biz.common.LogAdvice"></bean>
 	<aop:config>
@@ -50,7 +98,7 @@
 	</aop:config>  -->
 	
 	 
-	 
+	 <!-- 
 	<bean id="afterReturning" class="com.springbook.biz.common.AfterReturningAdvice"></bean>
 	<aop:config>
 		<aop:pointcut id="getPointcut"
@@ -59,17 +107,19 @@
 			<aop:after-returning pointcut-ref="getPointcut" method="afterLog"
 								returning = "returnObj"/>
 		</aop:aspect>
-	</aop:config> 
+	</aop:config>  -->
 	 
 	  
 	  <!-- 
 	  <bean id="afterThrowing" class="com.springbook.biz.common.AfterThrowingAdvice"></bean>
+	  
 	  <bean id="after" class="com.springbook.biz.common.AfterAdvice" />
+	 
 	<aop:config>
 		<aop:pointcut id="allPointcut"
 			expression="execution(* com.springbook.biz..*Impl.*(..))"/>
 		<aop:aspect ref="afterThrowing">
-			<aop:after-throwing pointcut-ref="allPointcut" method="exceptionLog"/>
+			<aop:after-throwing pointcut-ref="allPointcut" method="exceptionLog" throwing="exceptObj"/>
 		</aop:aspect>
 		
 		<aop:aspect ref="after">
@@ -119,4 +169,8 @@
 <!-- 	<bean id="tv" class="polymorphism.SamsungTV" p:speaker-ref="sony" p:price="270000"/>
 		<bean id="sony" class="polymorphism.SonySpeaker"/>
 		<bean id="apple" class="polymorphism.AppleSpeaker"></bean> -->
+		
+		
+		
+		
 </beans>
