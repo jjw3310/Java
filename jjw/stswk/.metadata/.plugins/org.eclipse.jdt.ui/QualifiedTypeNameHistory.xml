@@ -36,13 +36,13 @@
 <fullyQualifiedTypeName name="javax.activation.DataSource"/>
 <fullyQualifiedTypeName name="javax.swing.tree.RowMapper"/>
 <fullyQualifiedTypeName name="com.springbook.biz.user.UserVO"/>
-<fullyQualifiedTypeName name="com.springbook.biz.user.impl.UserDAO"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="com.springbook.biz.board.BoardVO"/>
-<fullyQualifiedTypeName name="com.springbook.biz.board.impl.BoardDAO"/>
 <fullyQualifiedTypeName name="com.springbook.view.controller.Controller"/>
+<fullyQualifiedTypeName name="com.springbook.biz.user.impl.UserDAO"/>
+<fullyQualifiedTypeName name="com.springbook.biz.board.impl.BoardDAO"/>
 <fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
 </qualifiedTypeNameHistroy>
