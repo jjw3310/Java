@@ -1,0 +1,37 @@
+dispatcher
+
+web.xml(encoding)
+
+spring 설정파일 (presentation-layer.xml)
+
+controller
+
+//1.사용자 입력 정보 추출
+//2DB 연동 처리
+//3. 화면 네비게이션
+
+ModelAndView(view는 경로까지 포함)
+
+
+
+
+view 이름 지정
+
+
+Annotation 기반 MVC
+
+Annotation 설정을 위한 준비(presentation-layer.xml)
+
+@Controller Annotation
+
+@RequestMapping (주소를 감지 및 실행)
+
+Command 객체 사용 (SpringContainer 설정)
+
+요청에 따른 @RequestMapping 사용 (get, post)
+
+jsp에서 command객체 사용
+
+ModelAttribute 사용 (메모리에 있는 유저이름 변경)
+
+controller 메소드 리턴 타입 (ModelAndView, String)
