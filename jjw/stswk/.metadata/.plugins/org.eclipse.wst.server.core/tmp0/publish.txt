@@ -1,5 +1,5 @@
 #Tomcat publish data
-#Thu Oct 29 16:36:05 KST 2020
+#Mon Nov 02 16:20:46 KST 2020
 org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\User\\.m2\\repository\\org\\springframework\\spring-web\\4.3.3.RELEASE\\spring-web-4.3.3.RELEASE.jar=C\:\\apache-tomcat-9.0.34\\wtpwebapps\\BoardWeb\\WEB-INF\\lib\\spring-web-4.3.3.RELEASE.jar
 org.eclipse.jst.jee.server\:sungjukbean=C\:\\apache-tomcat-9.0.34\\wtpwebapps\\sungjukbean
 org.eclipse.jst.jee.server\:edu=C\:\\apache-tomcat-9.0.34\\wtpwebapps\\edu
