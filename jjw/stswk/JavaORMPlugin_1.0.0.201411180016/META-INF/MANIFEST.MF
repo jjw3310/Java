@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.jf
+ ace.text,org.eclipse.core.resources,org.eclipse.ui.editors,org.eclips
+ e.ui.ide,org.eclipse.jdt.core
+Bundle-Vendor: karthy
+Bundle-ActivationPolicy: lazy
+Bundle-Version: 1.0.0.201411180016
+Bundle-Name: MyBatisORMPlugin
+Bundle-Activator: me.karthy.mybatisormplugin.Activator
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: JavaORMPlugin;singleton:=true
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+
+

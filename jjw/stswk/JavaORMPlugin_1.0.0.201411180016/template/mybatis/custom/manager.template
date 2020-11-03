@@ -1,0 +1,42 @@
+package #package;
+
+import java.util.List;
+
+import #package.dao.#daoname;
+import #package.model.#modelname;
+
+/**
+ * 
+ */
+
+/**
+ * @author karthy
+ *
+ */
+public class #classname {
+
+	public static void main(String[] args) {
+
+		#daoname dao = new #daoname();
+
+		#modelname model = new #modelname();
+
+		// insert something
+		dao.insertSomething(model);
+
+		// get something
+		model = new #modelname();
+		model = dao.getSomething(100);
+
+		// update something
+		model = new #modelname();
+		dao.updateSomething(model);
+
+		// delete something
+		dao.deleteSomething(100);
+
+		// get all
+		List<#modelname> list = dao.getAll();
+	}
+
+}

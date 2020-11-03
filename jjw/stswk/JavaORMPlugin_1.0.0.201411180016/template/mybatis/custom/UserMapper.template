@@ -1,0 +1,25 @@
+
+package #package.mapper;
+
+import java.util.List;
+
+import #package.model.#modelname;
+
+/**
+ * 
+ * @author karthy
+ *
+ */
+public interface #mappername {
+
+	public void insertSomething(#modelname model);
+
+	public #modelname getSomething(Integer yourId);
+
+	public List<#modelname> getAll();
+
+	public void updateSomething(#modelname model);
+
+	public void deleteSomething(Integer yourId);
+
+}

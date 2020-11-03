@@ -1,0 +1,78 @@
+package #package.dao;
+
+import java.util.List;
+import #package.mapper.#mappername;
+import #package.model.#modelname;
+import #package.util.MyBatisDAOUtil;
+
+import org.apache.ibatis.session.SqlSession;
+
+/**
+ * @author karthy
+ *
+ */
+public class #daoname {
+
+	public void insertSomething(#modelname model) {
+		SqlSession sqlSession = MyBatisDAOUtil.getSqlSessionFactory()
+				.openSession();
+		try {
+			#mappername mapper = sqlSession.getMapper(#mappername.class);
+			mapper.insertSomething(model);
+			sqlSession.commit();
+		} finally {
+			sqlSession.close();
+		}
+	}
+
+	public #modelname getSomething(Integer yourId) {
+		SqlSession sqlSession = MyBatisDAOUtil.getSqlSessionFactory()
+				.openSession();
+		try {
+			#mappername mapper = sqlSession.getMapper(#mappername.class);
+			return mapper.getSomething(yourId);
+		} finally {
+			sqlSession.close();
+		}
+	}
+
+	public List<#modelname> getAll() {
+		SqlSession sqlSession = MyBatisDAOUtil.getSqlSessionFactory()
+				.openSession();
+		List<#modelname> list = null;
+		try {
+			#mappername mapper = sqlSession.getMapper(#mappername.class);
+			list = mapper.getAll();
+			return list;
+
+		} finally {
+			sqlSession.close();
+		}
+	}
+
+	public void updateSomething(#modelname model) {
+		SqlSession sqlSession = MyBatisDAOUtil.getSqlSessionFactory()
+				.openSession();
+		try {
+			#mappername mapper = sqlSession.getMapper(#mappername.class);
+			mapper.updateSomething(model);
+			sqlSession.commit();
+		} finally {
+			sqlSession.close();
+		}
+
+	}
+
+	public void deleteSomething(Integer yourId) {
+		SqlSession sqlSession = MyBatisDAOUtil.getSqlSessionFactory()
+				.openSession();
+		try {
+			#mappername mapper = sqlSession.getMapper(#mappername.class);
+			mapper.deleteSomething(yourId);
+			sqlSession.commit();
+		} finally {
+			sqlSession.close();
+		}
+
+	}
+}

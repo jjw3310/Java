@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            name="JavaORMPlugin"
+            extensions="java"
+            icon="icons/sample.gif"
+            contributorClass="me.karthy.mybatisormplugin.editors.MyBatisORMPluginContributor"
+            class="me.karthy.mybatisormplugin.editors.MyBatisORMPlugin"
+            id="me.karthy.mybatisormplugin.editors.MyBatisORMPlugin">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            name="Java ORM Plugin"
+            id="MyBatisORMPlugin">
+      </category>
+      <wizard
+            name="Mybatis ORM Framework"
+            icon="icons/logo.png"
+            category="MyBatisORMPlugin"
+            class="me.karthy.mybatisormplugin.wizards.MyBatisORMWizard"
+            id="me.karthy.mybatisormplugin.wizards.MyBatisORMWizard">
+      </wizard>
+      
+       <wizard
+            name="Mybatis Configuration XML"
+            icon="icons/xml-icon.png"
+            category="MyBatisORMPlugin"
+            class="me.karthy.mybatisormplugin.wizards.MyBatisConfigWizard"
+            id="me.karthy.mybatisormplugin.wizards.MyBatisConfigWizard">
+      </wizard>
+      
+      <wizard
+            name="Mybatis Mapper XML"
+            icon="icons/xml-icon.png"
+            category="MyBatisORMPlugin"
+            class="me.karthy.mybatisormplugin.wizards.MyBatisMapperWizard"
+            id="me.karthy.mybatisormplugin.wizards.MyBatisMapperWizard">
+      </wizard>
+   </extension>
+
+</plugin>
