@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+/* notice.jsp ui */
+#sub_img_center{/*서브 메인 이미지*/
+	width:971px;
+	height:179px;
+	background-image:url(../images/center/sub_back.png);
+	background-repeat:no-repeat;
+	background-position: left top;
+}
+#notice{
+	width:670px; 
+	border-collapse: collapse;
+}
+#notice th{
+    height:20px; text-transform: capitalize;
+    font-size:14px; font-family: "나눔고딕";
+    font-weight:bold; padding:5px;
+    color:#FFF; text-align:center;
+    background-image:url("../images/center/t_back.jpg");
+    background-position: center center;/*정중앙 배치 */
+    background-repeat:repeat-x;/* x축으로 반복 */	
+}
+#notice td{
+	text-align:center; padding:6px 0;/*상하 안여백 6픽셀,
+	좌우 안여백 0픽셀 */
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color:#999;
+}
+#notice .left{
+    text-align: left; padding-left:10px;	
+}
+#notice th.tno{
+	border-top-left-radius: 5px;/*좌상단 테두리를 둥글게*/
+	border-bottom-left-radius:5px;/*좌하단 테두리를 둥글
+	게*/
+	width:50px;
+}
+#notice .ttitle{
+	width:400px; letter-spacing: 0.7em;/*title 글자간 
+	간격 조절 */
+}
+#notice .twrite{
+	width:100px;
+}
+#notice .tdate{
+	width:50px;
+}
+#notice .tread{
+	width:50px;
+	border-top-right-radius: 5px;/*오른쪽 상단 테두리를 둥
+	글게 처리*/
+	border-bottom-right-radius: 5px;/*우 하단 테두리를 둥
+	글게*/
+}
+#table_search{
+	margin:15px 0 10px 0; float:right;
+}
+#table_search .input_box{
+	height:20px; width:200px; border:1px solid #333;
+	border-radius:10px;/*테두리를 둥글게 */
+    background-color:#FEFDED;	
+}
+#table_search .btn{
+	padding:2px; 
+	margin:0 0 0 5px;
+	width:90px; height:23px;
+	border:1px solid #999;border-radius:10px;
+	color:#FFF;
+    background-image:url("../images/center/t_back.jpg");
+    background-repeat:repeat-x;/*x축 수평으로 반복*/
+    background-position: center center;	
+}
+#page_control{
+    text-align:center;
+    margin:20px 0 0 0;
+    margin-left:auto; margin-right:auto;/*div좌우 수평
+    중앙 정렬 */    	
+}
+#page_control a{/*하이퍼링크 걸린 곳 css 효과 */
+	padding:2px 5px; /*상하 안여백을 동시에 2픽셀,좌우
+	안여백을 동시에 5픽셀 */
+	text-decoration: none;/*밑줄선 없애기*/
+    color:#333;	margin:0 5px;/* 상하 바깥여백은 0픽셀,
+    좌우 바깥여백은 5픽셀 지정*/
+}
+#page_control a:hover{/*a:hover가상클래스로 하이퍼링크 된
+곳 마우스 오버시 css 효과*/
+	font-weight:bold;/*글자 진하게*/
+    text-decoration: underline;
+    color:#F90;/* 색상코드가 #ff9900을 줄여서 표현*/	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

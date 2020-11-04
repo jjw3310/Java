@@ -1,0 +1,161 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Julyrestaurant </title>
+<link rel="stylesheet" type="text/css" 
+href="./css/default.css" />
+</head>
+<body>
+<div id="wrap">
+ <header><%-- html5에서 추가된 태그로 머릿글 즉 상단영역
+ 지정할 때 사용한다. --%>
+   
+   <!-- 로그인과 회원가입메뉴 -->
+   <div id="login">
+    <a href="#">login</a> | <a href="./member/join.jsp">Join</a>
+   </div>
+    
+    <div class="clear"></div>
+    
+   <%-- 회사로고 --%>
+   <div id="logo">
+    <img src="./images/logo.png" width="200" height="150" padding-left="100px;"
+    alt="Fun We" />
+   </div><br><br><br>
+   
+   <%-- 상단메뉴 --%>
+   <nav><%--html5에서 nav태그는 메뉴구성할 때 사용. --%>
+    <ul>
+     <li><a href="index.jsp", style="color: green; font-style: inherit;">HOME</a></li>
+     <li><a href="./company/welcome.jsp", style="color: green; font-style: inherit;">COMPANY</a></li>
+     <li><a href="#", style="color: green; font-style: inherit;">SOLUTIONS</a></li>
+     <li><a href="./center/notice.jsp", style="color: green; font-style: inherit;">CUSTOMER CENTER</a></li>
+     <li><a href="#", style="color: green; font-style: inherit;">CONTACT US</a></li>
+    </ul>
+   </nav>
+ </header>
+ 
+ <div class="clear"></div>
+ 
+ <%--메인 이미지 --%>
+ 
+ <div id="main_img">
+  <img src="https://media-cdn.tripadvisor.com/media/photo-s/0d/4b/41/7f/july.jpg" class="basicImg" data-mediaid="223035775" width="323.66"  height="282" ><img src="https://media-cdn.tripadvisor.com/media/photo-f/0d/4b/41/a3/july.jpg" class="basicImg" data-mediaid="223035811" width="323.66" height="282"><img src="https://media-cdn.tripadvisor.com/media/photo-s/0c/8e/d4/82/caption.jpg" class="basicImg" data-mediaid="210687106" width="323.66" height="282">
+ </div>
+ 
+ <div class="clear"></div>
+ 
+ <%--본문내용--%>
+ <article id="front"><%--article은 html5에서 새롭게 추가된 것으로
+ 본문내용을 지정할 때 사용 --%>
+  <div id="solution">
+   <div id="hosting">
+   
+   
+   <!-- 전화예약 -->
+   <div class="contact_links_container is-hidden-tablet ">
+   <div class="react-container component-widget contact-links" id="component_7" data-component-props="page-manifest" data-component="@ta/restaurants.contact-links" data-component-init="data-component-init">
+   <div class="_1ifuGquM"><span><a href="tel:+82 2-534-9544" class="M1pZ3Kx2 _2ynDaeol" target="">
+   <span class="ui_icon phone Dvhyvx06"></span>
+   <div class="_26UNbhfc">전화</div></a></span><br>
+   
+   
+    <h3>Detail Infomation</h3>
+    <div><span><a target="_blank" href="http://www.julyrestaurant.org" style="text-decoration:none">
+   <span class="ui_icon laptop Dvhyvx06"></span>
+   
+   <div class="_26UNbhfc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 
+
+ <span class="ui_icon external-link-no-box "></span></div></a></span></div></div></div></div>
+  
+    <p>Restaurant Discounts Coupons</p>
+    <p>Restaurant Menus</p>
+    <p>Top Restaurant Reviews</p>
+    <p>Best Buffet Restaurants</p>
+    <p>Top Restaurant Guides</p>
+    <p>Cookbooks</p>
+    <p>Breakfast Restaurants</p>
+   </div>
+   
+   <div id="security">
+    <h3>Web Security Solution</h3>
+    <p>Lorem .. Ut vel est</p>
+    <p>Lorem .. Ut vel est</p>
+    <p>Lorem .. Ut vel est</p>
+    <p>Lorem .. Ut vel est</p>
+   </div>
+   
+   <div id="payment">
+    <h3>Web payment Solution</h3>
+    <p>Lorem .. Ut vel est</p>
+    <p>Lorem .. Ut vel est</p>
+    <p>Lorem .. Ut vel est</p>
+    <p>Lorem .. Ut vel est</p>
+   </div>
+  </div>
+  
+  <div class="clear"></div>
+  
+  <div id="sec_news">
+   <h3><span class="orange">Security</span> News</h3>
+   <dl>
+    <dt><a href="#">Vivamus id ligula ...</a></dt>
+    <%--jsp주석문기호, dt는 제목 --%>
+    <dd><a href="#">Proin quis ante ...</a></dd>
+    <%--dd는 내용 --%>
+    <dt><a href="#">Vivamus id ligula ...</a></dt>
+    <dd><a href="#">Proin quis ante ...</a></dd>
+   </dl>
+  </div>
+  
+  <div id="news_notice">
+   <h3 class="brown">News &amp; Notice</h3>
+   <%-- &amp;특수문자 &로 표현 --%>
+   <table>
+    <tr>
+     <td class="contxt"><a href="#">Vivamus ...</a></td>
+     <td><a href="#">2019.04.18</a></td>
+    </tr>
+    <tr>
+     <td class="contxt"><a href="#">Fusce ...</a></td>
+     <td><a href="#">2019.04.18</a></td>
+    </tr>
+   </table>
+  </div>  
+ </article>
+ 
+ <div class="clear"></div>
+ 
+ <%--하단 footer영역 --%>
+ <footer><%--footer도 하단영역을 지정할 때 사용하는 태그
+ 로 html5에서 새롭게 추가된 것. --%>
+  <hr/><%--수평선--%>
+  <div id="copy">
+   All contents Copyright 2019 FunWeb Inc. all rights
+   reserved<br/>
+   Contact mail: funweb@funwebbiz.com Tes:+82 64 123 43
+   15 Fax +82 64 123 4321
+  </div>
+  <div id="social">
+    <img src="./images/facebook.gif" width="33" 
+    height="33" alt="Facebook" />
+    <img src="./images/twitter.gif" width="33"
+    height="34" alt="Twitter" />  
+  </div>
+ </footer>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

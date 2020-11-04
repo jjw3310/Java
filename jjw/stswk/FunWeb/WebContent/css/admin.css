@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/* 관리지 메인 admin_index.jsp ui */
+#aMain_wrap{
+	width:860px; height:960px;
+	border:1px solid red; border-radius:15px;/*테두리 
+	둥글게*/ box-shadow:10px 10px 10px grey;/*그림자 효과*/
+    margin-left:auto; margin-right:auto;/*div레이아웃 수
+    평 중앙 정렬*/
+    margin-top:30px;/*바깥 상단여백*/		
+}
+#aHeader_menu{
+	width:840px; height:200px; border:1px solid blue;
+	border-radius:15px; margin:10px 0px 0px 10px;/*시계
+	방향으로 위,오른쪽,아래쪽,왼쪽 바깥여백 설정*/
+}
+#aHeader_Logo{
+	width:180px; height:180px; border:1px solid red;
+	border-radius:15px; margin:10px 0px 0px 10px;
+	float:left;/*복수개의 div를 수평정렬 되게 한다.*/
+}
+#aHeader_Logo img{
+	margin:60px 0px 0px 30px;
+}
+#aMain_menu{
+	width:380px; height:180px; border:1px solid red;
+	border-radius:15px; margin:10px 0px 0px 10px;
+    float:left;	
+}
+#aMain_menu ul li{
+	list-style:none;/* 목록앞 점 없애기 */
+	float:left;/* 수직정렬 목록을 수평 정렬로 바꿈*/
+	padding:0px 8px;/*위아래 안여백은 0픽셀,좌우 안여백을
+	8픽셀로 설정 */ margin-top:130px;
+}
+a:link{
+	text-decoration: none;/*하이퍼링크 걸린곳 밑줄없앰*/
+	}
+a:hover{/* a:hover 는 마우스 오버시 css 효과*/
+	text-decoration: underline;/*마우스 오버시 밑줄 나오게
+	하기*/
+}
+#aRright_menu{
+	width:234px; height:180px; border:1px solid red;
+	border-radius:15px;  margin:10px 0px 0px 10px;
+	float:left;
+}
+#aRright_menu h5{font-size:12px;}
+#aMain_cont{
+	width:840px; height:600px; border:1px solid blue;
+	border-radius: 15px; margin:10px 0px 0px 10px;
+}
+#aMain_cont .aMain_title{
+	margin:250px 0px 0px 280px;
+}
+#aFooter_menu{
+	width:840px; height:116px; border:1px solid blue;
+	border-radius:15px; margin:10px 0px 0px 10px;
+}
+#aFooter_menu .aFooter_title{
+    margin:45px 0px 0px 30px;	
+}
+
+/* admin_gongji.jsp ui */
+#aMain_cont  .aGcont_title{
+	margin:260px 0px 0px 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

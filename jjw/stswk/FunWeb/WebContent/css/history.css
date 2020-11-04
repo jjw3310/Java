@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/* history.jsp ui */
+#wel_cont .y2011, #wel_cont .y2010,#wel_cont .y2009{
+	border-top-width:1px; /*윗줄 선 두께*/
+	border-top-style:solid; /*윗줄 실선*/
+	border-top-color:#999; /*윗줄 선색 */
+	padding:10px 0 0 150px;
+}
+#wel_cont .y2011 h3, #wel_cont .y2010 h3, #wel_cont 
+.y2009 h3{
+	display: none; /*브라우저 화면에서 안보이게 함 */
+}
+#wel_cont .y2011{
+   background-image:url(../images/company/2011.jpg);
+   background-repeat:no-repeat;
+   background-position: left top;	
+}
+#wel_cont .y2010{
+	background-image:url(../images/company/2010.jpg);
+	background-repeat:no-repeat;
+	background-position:left top;
+}
+#wel_cont .y2009{
+   background-image:url(../images/company/2009.jpg);
+   background-repeat:no-repeat;
+   background-position:left top;	
+}
+#wel_cont .y2011 dt,#wel_cont .y2010 dt,
+#wel_cont .y2009 dt{
+	float:left;
+	text-transform:capitalize;/*영문자 첫글자만 대문자로
+	함*/
+	font-family:"나눔고딕";
+    font-size:15px;
+    color:#39F;
+    padding-top:3px;/*위쪽 안여백을 설정*/
+    margin:0;/* 상하좌우 바깥여백을 지정*/	
+}
+#wel_cont .y2011 dd, #wel_cont .y2010 dd,
+#wel_cont .y2009 dd{
+	padding:0 0 0 15px;
+	line-height:2em;/*수직간의 간격*/
+	background-image:url(../images/company/h_bullet.gif);
+	background-repeat:no-repeat;
+	background-position:left center;
+}
+#wel_cont .y2011 dl, #wel_cont .y2010 dl,
+#wel_cont .y2009 dl{
+	margin:0 0 10px 0;
+	padding:0 0 10px 0;
+	border-bottom-width:1px;/*아래쪽 선두께*/
+	border-bottom-style:dotted; /*아래쪽 점선*/
+	border-bottom-color:#ccc; /*아래쪽 선색 */
+}
+#wel_cont dl.dot_none{
+	border-bottom: none;/*아래줄 점선 제거*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

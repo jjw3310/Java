@@ -1,0 +1,5 @@
+package com.example.sample.model.dao;
+
+public class MemoDAOImpl {
+
+}

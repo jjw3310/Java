@@ -1,7 +1,9 @@
 #Tomcat publish data
-#Mon Nov 02 16:20:46 KST 2020
-org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\User\\.m2\\repository\\org\\springframework\\spring-web\\4.3.3.RELEASE\\spring-web-4.3.3.RELEASE.jar=C\:\\apache-tomcat-9.0.34\\wtpwebapps\\BoardWeb\\WEB-INF\\lib\\spring-web-4.3.3.RELEASE.jar
+#Wed Nov 04 17:57:58 KST 2020
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\User\\.m2\\repository\\org\\springframework\\spring-web\\4.3.3.RELEASE\\spring-web-4.3.3.RELEASE.jar=C\:\\apache-tomcat-9.0.34\\wtpwebapps\\sample\\WEB-INF\\lib\\spring-web-4.3.3.RELEASE.jar
 org.eclipse.jst.jee.server\:sungjukbean=C\:\\apache-tomcat-9.0.34\\wtpwebapps\\sungjukbean
-org.eclipse.jst.jee.server\:edu=C\:\\apache-tomcat-9.0.34\\wtpwebapps\\edu
 org.eclipse.jst.jee.server\:mvc=C\:\\apache-tomcat-9.0.34\\wtpwebapps\\mvc
+org.eclipse.jst.jee.server\:edu=C\:\\apache-tomcat-9.0.34\\wtpwebapps\\edu
+org.eclipse.jst.jee.server\:FunWeb=C\:\\apache-tomcat-9.0.34\\wtpwebapps\\FunWeb
+org.eclipse.jst.jee.server\:sample=C\:\\apache-tomcat-9.0.34\\wtpwebapps\\sample
 org.eclipse.jst.jee.server\:BoardWeb=C\:\\apache-tomcat-9.0.34\\wtpwebapps\\BoardWeb

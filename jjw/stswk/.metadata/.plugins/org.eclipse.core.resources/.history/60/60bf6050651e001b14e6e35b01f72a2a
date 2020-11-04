@@ -1,0 +1,53 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<%@ include file="../include/header.jsp"%>
+<%--상단 공통 header.jsp 불러오기 --%>
+
+<%--서브 메인 이미지 --%>
+<div id="sub_img"></div>
+
+<div class="clear"></div>
+
+<%--서브메뉴 --%>
+<div id="sub_menu">
+	<ul>
+		<li><a href="welcome.jsp">Welcome</a></li>
+		<li><a href="history.jsp">History</a></li>
+		<li><a href="#">Newsroom</a></li>
+		<li><a href="#">Public Policy</a></li>
+	</ul>
+</div>
+
+<%--서브 본문 --%>
+<div id="wel_cont">
+	<h1>Welcome</h1><br><br><br>
+	<figure class="ceo">
+		<img src="../images/company/o.neul1.jpg" width="196" height="226"
+			alt="CEO" />
+		<figcaption>Fun Web CEO Michael</figcaption>
+	</figure>
+
+	<%--copy begin --%>
+	<p>고즈넉한 서래마을에서 10년째 우직하고 충실한 음식을 만들어온 줄라이. </p>
+	
+		<p>정통 프렌치 요리에 기반을 두고 있지만,<br>
+		국내 식재료를 최대한 활용해 셰프의 개성대로 전통을 재해석한 노력이 돋보인다.</p>
+		
+	<p>	한국 고유의 발효 식품인 간장과 된장 등을 요리에 이용하는 것이 그러한 예다.</p>
+		
+	<p>	이곳에선 화려하진 않지만 재료 본연의 맛이 살아 있는 정직한 음식을 선보이며,<br>
+		작지만 아늑한 다이닝 홀은 특별한 식사 분위기를 제공한다.</p>
+	<%-- copy end --%>
+</div>
+
+<jsp:include page="../include/footer.jsp" />
+<%-- 하단 공통영역 footer.jsp 불러오는 jsp:include 액션
+태그 --%>
+
+
+
+
+
+
+
+
+
