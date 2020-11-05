@@ -116,12 +116,17 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\sts-bundle\stswk\spring02"/>
+			<item value="C:\sts-bundle\stswk\ShopWeb"/>
+			<item value="C:\sts-bundle\stswk\Extreme"/>
+			<item value="C:\sts-bundle\stswk\FunWeb"/>
 			<item value="C:\sts-bundle\stswk\sample"/>
 			<item value="C:\sts-bundle\BoardWeb"/>
 			<item value="C:\sts-bundle\stswk\BoardWeb"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
+			<item value="C:\sts-bundle\stswk\sample\src\main\webapp\WEB-INF\views\memo\memo.jsp"/>
 		</list>
 	</section>
 	<section name="NewWizardAction">

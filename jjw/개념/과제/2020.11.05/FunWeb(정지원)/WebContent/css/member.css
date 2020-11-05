@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/* join.jsp ui */
+#sub_img_member{
+	width:971px; 
+	height:179px;
+	background-image:url(../images/member/sub_back.png);
+	background-repeat:no-repeat;
+	background-position: left top;
+}
+#join{
+	margin:10px 0 0 0;
+	width:670px;
+}
+#join fieldset{
+	padding:10px 0 20px 5px; 
+	border:none;/*테두리 경계선을 제거 */
+}
+#join fieldset legend{
+	font-family: "나눔고딕";
+	font-size:20px;
+	border-bottom:1px dotted #666;/*밑줄 점선*/
+	width:600px; padding:5px 0;
+}
+#join label{
+	width:140px; float:left;
+	margin:5px 0;
+}
+#join input{
+    margin:5px 0;/* 상하 바깥 여백을 5픽셀,좌우 바깥 여백
+    을 0픽셀 */
+    border:1px solid #999;/*입력박스 테두리 모양 설정*/
+    background-color:#FCFDEA;/*입력박스 배경색 */	
+}
+#join .id{
+	width:100px; height:18px;
+}
+#join .dup{
+    width:120px; height:23px; 
+    border-radius:8px; border:none;/*테두리선을 없앰*/
+    margin:0 0 0 5px; font-weight:bold;
+    color:#FFF;
+    background-image:url("../images/member/dup.jpg");
+    background-repeat:repeat-x;
+    background-position:center center;	
+}
+
+#buttons{
+	margin:20px 0 0 0;/*동시에 위,오른쪽,아래쪽,왼쪽 바깥
+	여백을 지정*/
+}
+
+#buttons .submit, #buttons .cancel{
+	height:30px; width:150px;
+	border:1px solid #666;
+	border-radius:10px; /* css3 추가된 속성으로 테두리를
+	둥글게 처리 */
+	box-shadow: 3px 3px 2px #ccc;/*그림자효과=>css3 에서
+	새롭게 추가된 속성 */
+	font-size:14px;
+}
+#buttons .submit{
+background-image:url("../images/member/submit_back.jpg");
+background-repeat: repeat-x;/* x축으로 반복 */
+background-position: center center;
+color:#FFF;
+}
+#buttons .cancel{
+background-image:url("../images/member/cancel_back.jpg");
+background-repeat: repeat-x;
+background-position:center center;
+margin:0 0 0 20px;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+package main.java.com.springbook.view.user;
+
+public class LoginController {
+
+}
