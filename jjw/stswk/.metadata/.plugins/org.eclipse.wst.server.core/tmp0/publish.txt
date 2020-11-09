@@ -1,5 +1,5 @@
 #Tomcat publish data
-#Thu Nov 05 16:23:46 KST 2020
+#Mon Nov 09 10:11:30 KST 2020
 org.eclipse.jst.jee.server\:BoardWeb=C\:\\apache-tomcat-9.0.34\\wtpwebapps\\BoardWeb
 org.eclipse.jst.jee.server\:ShopWeb=C\:\\apache-tomcat-9.0.34\\wtpwebapps\\ShopWeb
 org.eclipse.jst.jee.server\:sample=C\:\\apache-tomcat-9.0.34\\wtpwebapps\\sample
